@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorProject</title>
+   <link rel="icon" type="image/x-icon" href="/Tutor_Coaching/Images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="/Tutor_Coaching/styles/Style.css" rel="stylesheet">
+    <style>
+        /* Your CSS styles here */
+        .quote {
+            font-size: 24px;
+            font-style: italic;
+            text-align: center;
+            color: purple;
+        }
+        .quote-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin: 100px;
+        }
+        .quote-image {
+            width: 30%;
+            max-height: 50%;
+            border-radius: 8px;
+        }
+        #cofounders-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .cofounder {
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease; /* Transition for smooth animation */
+        }
+        .cofounder img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .cofounder p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .cofounder a {
+            color: #0077b5;
+            font-size: 24px;
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+        }
+        /* Hover animation */
+        .cofounder:hover {
+            transform: scale(1.1); /* Scale up the cofounder container on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Your header content here -->
+        <div class="logo-container">
+            <img src="/Tutor_Coaching/Images/Coaching.png" class="navbar-logo" alt="Logo Here">
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="/Tutor_Coaching/HTML/Index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="/Tutor_Coaching/HTML/contactus.html">Contact Us</a></li>
+                <li><a href="/Tutor_Coaching/JSP/beforelogin.jsp">Sign in</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div>
+            <h2>Free Education Empowers Everyone</h2>
+            <p class="quote">"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</p>
+        </div>
+    </section>
+
+    <!-- Cofounders Container -->
+    <div id="cofounders-container">
+        <!-- JavaScript will populate cofounders here -->
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Define JSON data as a variable
+        const cofoundersData = {
+            "cofounders": [
+                {
+                    "image": "/Tutor_Coaching/Images/naruto.jpeg",
+                    "name": "Subhash Ghakhar",
+                    "position": "Co Founder",
+                    "linkedin": "https://www.linkedin.com/",
+                    "icon": "fab fa-linkedin"
+                },
+                {
+                    "image": "/Tutor_Coaching/Images/sasuke.jpeg",
+                    "name": "Mukul Rattan",
+                    "position": "Co Founder",
+                    "linkedin": "https://www.linkedin.com/",
+                    "icon": "fab fa-linkedin"
+                },
+                {
+                    "image": "/Tutor_Coaching/Images/sakura.jpeg",
+                    "name": "Dilpreet Kaur",
+                    "position": "Co Founder",
+                    "linkedin": "https://www.linkedin.com/",
+                    "icon": "fab fa-linkedin"
+                },
+                {
+                    "image": "/Tutor_Coaching/Images/vegeta.png",
+                    "name": "Davinder Singh",
+                    "position": "Co Founder",
+                    "linkedin": "https://www.linkedin.com/",
+                    "icon": "fab fa-linkedin"
+                },
+                {
+                    "image": "/Tutor_Coaching/Images/pain.jpg",
+                    "name": "Jay Piyushbhai Patel",
+                    "position": "Co Founder",
+                    "linkedin": "https://www.linkedin.com/",
+                    "icon": "fab fa-linkedin"
+                }
+            ]
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('cofounders-container');
+
+            // Access cofounders data from the defined variable
+            const cofounders = cofoundersData.cofounders;
+            cofounders.forEach(cofounder => {
+                const cofounderDiv = document.createElement('div');
+                cofounderDiv.classList.add('cofounder');
+
+                const image = document.createElement('img');
+                image.src = cofounder.image;
+                image.alt = cofounder.name + "'s image";
+                cofounderDiv.appendChild(image);
+
+                const name = document.createElement('p');
+                name.textContent = cofounder.name;
+                name.style.fontWeight = 'bold';
+                cofounderDiv.appendChild(name);
+
+                const position = document.createElement('p');
+                position.textContent = cofounder.position;
+                cofounderDiv.appendChild(position);
+
+                const linkedin = document.createElement('a');
+                linkedin.href = cofounder.linkedin;
+                linkedin.target = '_blank';
+
+                const linkedinIcon = document.createElement('i');
+                linkedinIcon.classList.add('fab', 'fa-linkedin');
+                linkedin.appendChild(linkedinIcon);
+
+                cofounderDiv.appendChild(linkedin);
+
+                container.appendChild(cofounderDiv);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Custom CSS for Full Stack JavaScript Course */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #343a40;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+.course-image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    display: block; /* Ensures the image behaves as a block element */
+     /* Ensures the image doesn't exceed its container */
+  /* Ensures the image doesn't exceed 50px height */
+}
+
+/* Evaluation container styles */
+.evaluation-container {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Announcement and attendance container styles */
+.announcement-container,
+.attendance-container {
+    margin-bottom: 20px;
+}
+
+/* Attendance button styles */
+.attendance-button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.attendance-button.green {
+    background-color: #28a745;
+}
+
+/* Section container styles */
+.section-container {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Virtual Live Class Join button styles */
+.section-container button {
+    margin-top: 10px;
+}
+.attendance-heading,
+.announcement-heading {
+    display: flex;
+    align-items: center;
+}
+
+/* Attendance and announcement icon styles */
+.attendance-icon,
+.announcement-icon {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+}
+
+/* Remove default list styling for announcement link */
+.announcement-heading a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the parent */
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 5px; /* Adjust spacing as needed */
+    color: #007bff; /* Change link color */
+    text-decoration: none;
+}
+
+.download-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* NewFile.css */
+
+.section-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.section-container:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.section-container h3 {
+    color: #333; /* Set text color for section headings */
+    font-weight: bold; /* Make section headings bold */
+    margin-bottom: 10px;
+}
+
+.section-container ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0;
+}
+
+.section-container ul li {
+    margin-bottom: 5px;
+}
+
+/* Define animation for hover effect */
+.section-container:hover {
+    transform: scale(1.02); /* Scale up on hover */
+}

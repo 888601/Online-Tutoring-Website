@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="icon" type="image/x-icon" href="/Tutor_Coaching/Images/favicon.ico">
+ <link href="/Tutor_Coaching/styles/Style.css" rel="stylesheet">
+<meta charset="ISO-8859-1">
+<title>Contact Us</title>
+<link href="/Tutor_Coaching/CSS/form.css">
+</head>
+<body>
+<div class = header>
+        <div class = "logo-container">
+           <img src="/Tutor_Coaching/Images/Coaching.png" class = "navbar-logo" alt="Logo Here" >
+         </div>
+				
+<nav class="navbar">
+    
+    
+    <ul class="menu">
+        <li><a href="Index.html">Home</a></li>
+    
+        
+            
+      <li> <a href="/Tutor_Coaching/HTML/aboutus.html">About Us </a>  </li>
+      <li> <a href = "contactus.html">Contact Us</a> </li>
+      <li> <a href ="/Tutor_Coaching/JSP/beforelogin.jsp"> Sign in</a>
+    </ul>
+ 
+</nav>
+</div>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-9">
+      <h1 class="mb-3">Contact Us</h1>
+      <form action="/Tutor_Coaching/ContactServlet" method="post">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="your-name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="your-name" name="your-name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="your-surname" class="form-label">Your Surname</label>
+            <input type="text" class="form-control" id="your-surname" name="your-surname" required>
+          </div>
+          <div class="col-md-6">
+            <label for="your-email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="your-email" name="your-email" required>
+          </div>
+          <div class="col-md-6">
+            <label for="your-subject" class="form-label">Your Subject</label>
+            <input type="text" class="form-control" id="your-subject" name="your-subject">
+          </div>
+          <div class="col-12">
+            <label for="your-message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-md-6 btn-container" > <br>
+                <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-dark w-100 fw-bold" >Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+ <footer>
+    <div class="container">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorProject</title>
+  <link rel="icon" type="image/x-icon" href="/Tutor_Coaching/Images/favicon.ico">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+ <link href="/Tutor_Coaching/styles/Style.css" rel="stylesheet">
+ <style>
+    /* Custom CSS for Job Oriented Courses section */
+
+        body {
+            font-family: 'Arial', sans-serif; /* Default font family */
+        }
+
+        /* Center-align the container */
+        .container {
+            text-align: center;
+        }
+
+        /* Course card style */
+        .course-card {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Left-align content within the card */
+            display: inline-block; /* Display as inline block to center properly */
+        }
+
+        /* Course title style */
+        .course-card h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007bff; /* Custom title color */
+        }
+
+        /* Course details style */
+        .course-card ul {
+            padding-left: 0;
+            list-style: none;
+            text-align: left; /* Left align details */
+        }
+
+        /* Learn More button style */
+        .course-card .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .course-card .btn-primary:hover {
+            background-color: #0056b3;
+        }
+         h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Stylish h4 heading */
+        h4 {
+            font-family: 'Times New Roman', serif;
+            font-size: 24px;
+            font-style: italic;
+        }
+    </style>
+ </head>
+<body>
+<div class = header>
+        <div class = "logo-container">
+           <img src="/Tutor_Coaching/Images/Coaching.png" class = "navbar-logo" alt="Logo Here" >
+         </div>
+				
+<nav class="navbar">
+    
+    
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+    
+           
+            
+      <li> <a href="/Tutor_Coaching/HTML/aboutus.html">About Us </a>  </li>
+      <li> <a href = "/Tutor_Coaching/HTML\contactus.html">Contact Us</a> </li>
+      <li> <a href ="/Tutor_Coaching/JSP/beforelogin.jsp"> Sign in</a>
+    </ul>
+ 
+</nav>
+</div>
+
+   <!--Slider-->
+  <div id="slider">
+    <div class="slide">
+      <img src="/Tutor_Coaching/Images\study1.jpg" alt="Image 1">
+      
+    </div>
+    <div class="slide">
+      <img src="/Tutor_Coaching/Images\study2.jpeg" alt="Image 2">
+      
+    </div>
+    <div class="slide">
+      <img src="/Tutor_Coaching/Images/study3.png" alt="Image 3">
+     
+    </div>
+    <div class="slide">
+      <img src="/Tutor_Coaching/Images/study4.jpg" alt="Image 4">
+    </div>
+     <div class="slide">
+      <img src="/Tutor_Coaching/Images/study5.jpg" alt="Image 5">
+    </div>
+    
+    
+
+   
+    <span class="arrow" id="prev-arrow" onclick="prevSlide()">&#10094;</span>
+    <span class="arrow" id="next-arrow" onclick="nextSlide()">&#10095;</span>
+  </div>
+<!-- Job Oriented Courses Section -->
+<!-- Job Oriented Courses Section -->
+<div class="container mt-5">
+  <h2>Job Oriented Courses</h2>
+  <h4> take a first step towards better career</h4>
+  <div class="row">
+    <!-- Full Stack JavaScript Course -->
+    <div class="col-md-6">
+      <div class="course-card">
+        <i class="fas fa-code"></i>
+        <h3>Full Stack Java EE</h3>
+        <ul>
+          <li><strong>Level:</strong> Intermediate</li>
+          <li><strong>Batch Availability:</strong> Weekends</li>
+          <li><strong>Course Duration:</strong> 15 weeks</li>
+          <li><strong>Mode of Class:</strong> Online</li>
+        </ul>
+        <a href="/Tutor_Coaching/JSP/JavaEE.jsp" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="course-card">
+        <i class="fab fa-dev"></i>
+        
+        <h3>DevOps</h3>
+        <ul>
+          <li><strong>Level:</strong> Intermediate</li>
+          <li><strong>Batch Availability:</strong> Weekends</li>
+          <li><strong>Course Duration:</strong> 15 weeks</li>
+          <li><strong>Mode of Class:</strong> Online</li>
+        </ul>
+        <a href="/Tutor_Coaching/JSP/Devops.jsp" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  
+    
+    <!-- Web Application Using C# -->
+    <div class="col-md-12">
+      <div class="course-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Cloud Computing</h3>
+        <ul>
+          <li><strong>Level:</strong> Intermediate</li>
+          <li><strong>Batch Availability:</strong> Weekends</li>
+          <li><strong>Course Duration:</strong> 15 weeks</li>
+          <li><strong>Mode of Class:</strong> Online</li>
+        </ul>
+        <a href="/Tutor_Coaching/JSP/Cloud.jsp" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/Tutor_Coaching/Images/1.jpg" class="card-img-top" alt="Card image">
+           <div class="card-body">
+            <h5 class="card-title">Cloud Computing Expert</h5>
+            <p class="card-text">
+           <strong> Mady Jackson</strong><br>Ex-Amazon SDE-2</p>
+         
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/Tutor_Coaching/Images/2.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Java EE Tutor</h5>
+            <p class="card-text"><strong> Maria Johnson</strong><br>Ex-Meta Principal SDE</p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/Tutor_Coaching/Images/3.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Academic Head</h5>
+            <p class="card-text"><strong> Siri David</strong><br>Board Member, Lambton</p>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+<script src="/Tutor_Coaching/styles/slide.js"></script>
+</body>
+</html>
