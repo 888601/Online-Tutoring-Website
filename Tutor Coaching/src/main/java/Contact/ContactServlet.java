@@ -35,7 +35,7 @@ public class ContactServlet extends HttpServlet {
         // Set up the session
         Session session = Session.getInstance(properties, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("subhashghakharsg@gmail.com", "xsmtpsib-d5e462f04d8865a87400e816b01fda5b7a4338dff60d455907ac11933386039c-kYmHd2rTQ4BZMtyN");
+                return new PasswordAuthentication("", "");
             }
         });
 
@@ -44,8 +44,8 @@ public class ContactServlet extends HttpServlet {
             Message message = new MimeMessage(session);
 
             // Set the sender and recipient addresses
-            message.setFrom(new InternetAddress("subhashghakharsg@gmail.com"));
-            message.setRecipient(Message.RecipientType.TO, new InternetAddress("subhashghakharsg@gmail.com"));
+            message.setFrom(new InternetAddress(""));
+            message.setRecipient(Message.RecipientType.TO, new InternetAddress(""));
 
             // Set the email subject and content
             message.setSubject("New Form Submission");
