@@ -7,3 +7,4 @@ Theres Admin Page, Teacher Page and Student Pages
 Add your SQL/ORACLE Credentials
 
 I have included Some Pictures of Project
+There is im5 Picture of all the dependencies as well
